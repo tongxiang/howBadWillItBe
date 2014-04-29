@@ -1,5 +1,18 @@
 <section data-ng-controller="IndexController">
 	<h1>how bad will the McCutcheon v. FEC decision be for America?</h1>
-<!--     <div d3-bars bar-height="20" bar-padding="5"></div>
- -->    <donut-chart></donut-chart>
+
+    <div ng-app="mean.directives" ng-init="chart = [ 10, 20, 30 ]">
+        <input type='range' ng-model='chart[0]'>
+        <br>
+        <input type='range' ng-model='chart[1]'>
+        <br>
+        <input type='range' ng-model='chart[2]'>
+        <br>
+
+        <donut-chart data='chart'></donut-chart>
+        <donut-chart data='chart'></donut-chart>
+        <donut-chart data='chart'></donut-chart>
+
+        <albers-usa></albers-usa>
+    </div>
 </section>
