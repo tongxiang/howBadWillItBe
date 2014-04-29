@@ -42,7 +42,7 @@ angular.module('mean.directives', [])
 .directive('albersUsa', function(){
   function link(scope, element, attribute){
     console.log('albersUsa link function returning');
-    console.log(topojson)
+    console.log('this is the topojson object', topojson)
 
     var width = 960,
         height = 500;
