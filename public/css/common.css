@@ -23,3 +23,22 @@ footer {
 footer p {
     padding:5px 0 12px 10px
 }
+
+.land {
+  fill: #222;
+  opacity: .5;
+}
+
+/*D3.js class styles 
+*/
+
+.county-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.state-boundary {
+  fill: none;
+  stroke: #fff;
+}
