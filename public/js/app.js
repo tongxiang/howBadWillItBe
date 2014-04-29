@@ -10,7 +10,7 @@ angular.module('mean.directives', []); //is this necessary if I've included a di
 
 angular.module('d3', []);
 
-angular.module('d3', [])
+var x = angular.module('d3', [])
 .factory('d3Service', ['$document', '$window', '$q', '$rootScope',
   function($document, $window, $q, $rootScope) {
     var d = $q.defer(),
@@ -33,6 +33,7 @@ angular.module('d3', [])
  
   var s = $document[0].getElementsByTagName('body')[0];
   s.appendChild(scriptTag);
- 
   return d3service;
 }]);
+
+console.log(x);
